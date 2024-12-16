@@ -16,6 +16,6 @@ export const authCallback =  async (req, res) => {
 
     } catch(err) {
         console.log("Error in auth callback", err);
-        res.status(500).json({message: "Internal server error", err})
+        next(err);
     }
 }
