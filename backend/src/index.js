@@ -42,6 +42,6 @@ app.use((err,req,res,next)=>{
 })
 
 app.listen(PORT, ()=>{
-    console.log("Serve is running on PORT ", PORT);
+    console.log("Server is running on PORT", PORT);
     connectDB();
 })
